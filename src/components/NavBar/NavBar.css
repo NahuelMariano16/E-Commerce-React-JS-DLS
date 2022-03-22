@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.NavBar{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+}
+
+.logo{
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 80px;
+    padding-top: 5px;
+}
+
+.listItem{
+    text-decoration: none;
+    color: white;
+    width: 20%;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.listItem:hover{
+    color: #61DBFB;
+    text-decoration: underline;
+}
+.logoCart{
+    width: 20%;
+    margin-left: 20px;
+}
