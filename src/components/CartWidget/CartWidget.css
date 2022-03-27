@@ -1,0 +1,16 @@
+.logoCart{
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 200px;
+    background-color: #61DBFB;
+}
+.counter{
+    width: 20px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.logoCont{
+    display: flex;
+}

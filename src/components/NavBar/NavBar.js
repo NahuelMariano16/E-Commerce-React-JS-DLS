@@ -1,13 +1,22 @@
 import './NavBar.css' 
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar =()=>{
     return(
         <nav className='NavBar'>
-            <img src="logo.png" alt='DLS Tienda' className="logo"/>
-            <a href="" className='listItem'>Celulares</a> 
-            <a href="" className='listItem'>Tablets</a> 
-            <a href="" className='listItem'>Notebooks</a> 
-            <img src="" alt="Logo Shopcart" className="logoCart"/>
+            <div>
+                <img src={'./images/logo.png'} alt='DLS Tienda' className="logo"/>  
+            </div>
+
+            <div>
+                <button className='listItem'>Celulares</button> 
+                <button className='listItem'>Tablets</button> 
+                <button className='listItem'>Notebooks</button>
+            </div> 
+            
+            <div>
+                <CartWidget />
+            </div>
         </nav>
     )
 }
