@@ -4,8 +4,10 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemCount from './components/ItemCount/ItemCount';
 
 const App=()=> {
-  const OnAdd = (cantidad) =>{
-    console.log(`Se agregaron ${cantidad} de productos al carrito`)
+  
+  const handleOnAdd=(cantidad) =>{
+    console.log(`Se agregaron ${cantidad} al carrito`)
+    alert("Tus productos ya fueron agregados al carrito")
   }
 
   return (
@@ -15,7 +17,7 @@ const App=()=> {
       </header>
       <br></br>
       <ItemListContainer greetings='Bienvenidos a DLS Commerce' />
-      <ItemCount initial={0} stock={10} onAdd={OnAdd}/>
+      <ItemCount initial={0} stock={10} onAdd={handleOnAdd}/>
     </div>
   );
 }
