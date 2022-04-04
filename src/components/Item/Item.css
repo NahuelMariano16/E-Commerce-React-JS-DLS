@@ -1,0 +1,12 @@
+.cardCont{
+    display: flex;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.imgProd{
+    width: 200px;
+    height: 200px;
+}
