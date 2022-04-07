@@ -2,7 +2,7 @@ const products= [
     {
         id:1 , 
         name:"Samsung Galaxy S22 Ultra", 
-        price: 230.000, 
+        price: "230.000", 
         category:"celular",
         img:"https://img.global.news.samsung.com/ar/wp-content/uploads/2022/02/Samsung_Galaxy-S22-Ultra_Green.jpg",
         stock:15,
@@ -11,7 +11,7 @@ const products= [
     {
         id:2,
         name:"Xiaomi Pad Keyboard",
-        price: 24.000,
+        price: "24.000",
         category:"tablet",
         img:"https://www.powerplanetonline.com/cdnassets/funda_smart_case_con_teclado_xiaomi_pad_5_negro_01_l.jpg",
         stock:50,
@@ -32,6 +32,14 @@ export const getProducts = () =>{
     return new Promise (resolve =>{
         setTimeout(()=>{
             resolve(products)
+        }, 2000)
+    })
+}
+
+export const getProductsById = (id) =>{
+    return new Promise (resolve=>{
+        setTimeout(()=>{
+            resolve(products.find(prod => prod.id === id))
         }, 2000)
     })
 }

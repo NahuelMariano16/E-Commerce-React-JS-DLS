@@ -1,14 +1,10 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
-
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 const App=()=> {
   
-  const handleOnAdd=(cantidad) =>{
-    console.log(`Se agregaron ${cantidad} al carrito`)
-    alert("Tus productos ya fueron agregados al carrito")
-  }
+  
 
   return (
     <div className="App">
@@ -16,8 +12,9 @@ const App=()=> {
        <NavBar />
       </header>
       <br></br>
-      <ItemListContainer greetings='Bienvenidos a DLS Commerce' />
-      <ItemCount initial={0} stock={10} onAdd={handleOnAdd}/>
+      {/* <ItemListContainer greetings='Bienvenidos a DLS Commerce' />   */}
+      <ItemDetailContainer  /> 
+      
     </div>
   );
 }

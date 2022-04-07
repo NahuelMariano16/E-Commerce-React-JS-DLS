@@ -3,7 +3,7 @@ import './ItemCount.css'
 
 const ItemCount = ({initial, stock, onAdd}) =>{
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     useEffect(()=>{
         console.log('Se monto el componente')
@@ -14,8 +14,11 @@ const ItemCount = ({initial, stock, onAdd}) =>{
     }, [count]);
 
     const decrement = () =>{
-        console.log('Decremento');
-        setCount(count -1)
+        if(count >=2){
+            console.log('Decremento');
+            setCount(count -1)
+            //Condicional agregado 
+        }
     };
 
     const increment = () =>{
