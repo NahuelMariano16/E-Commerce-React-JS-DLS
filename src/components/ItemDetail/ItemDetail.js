@@ -1,4 +1,10 @@
 import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount'
+
+const OnAdd = (quantity) => {
+    console.log(`se agregaron ${quantity} productos`)
+}
+
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
     return(
@@ -23,6 +29,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
                     <p className='info'>
                         Precio: {price}
                     </p>
+                    <ItemCount initial={1} stock={10} onAdd={OnAdd}/>
                 </section>
             </section>
         </div>
