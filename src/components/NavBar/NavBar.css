@@ -35,3 +35,35 @@
     font-weight: bolder;
     text-decoration: underline;
 }
+.listContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Option{
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0;
+    width: 80px;
+    padding: 10px;
+    background-color: none;
+    color: black;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ActiveOption{
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0;
+    width: 80px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+}

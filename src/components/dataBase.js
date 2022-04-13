@@ -27,19 +27,32 @@ const products= [
         description:"Descripcion de Notebook HP 240",
     }
 ]
+const categories = [
+    {id: 'celular', description: 'Celular'},
+    {id: 'tablet', description: 'Tablet'},
+    {id: 'notebook', description: 'Notebook'}
+]
 
-export const getProducts = () =>{
+export const getCategories = () =>{
+    return new Promise(resolve => {
+        setTimeout( () =>{
+            resolve(categories)
+        }, 500)
+    })
+}
+
+export const getProducts = (categoryId) =>{
     return new Promise (resolve =>{
         setTimeout(()=>{
-            resolve(products)
-        }, 2000)
+            resolve(categoryId ? products.filter(prod => prod.category === categoryId):products)
+        }, 500)
     })
 }
 
 export const getProductsById = (id) =>{
     return new Promise (resolve=>{
         setTimeout(()=>{
-            resolve(products.find(prod => prod.id === id))
-        }, 2000)
+            resolve(products.find(prod => prod.id === parseInt(id)))
+        }, 500)
     })
 }

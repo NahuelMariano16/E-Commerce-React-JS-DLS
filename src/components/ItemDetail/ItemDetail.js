@@ -8,7 +8,7 @@ const OnAdd = (quantity) => {
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
     return(
-        <div>
+        <div className='container'>
             <h2>Item Detail</h2>
             <section className='Card'>
                 <header>
@@ -31,6 +31,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
                     </p>
                     <ItemCount initial={1} stock={10} onAdd={OnAdd}/>
                 </section>
+                <footer className='footer'></footer>
             </section>
         </div>
     )
