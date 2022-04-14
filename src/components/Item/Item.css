@@ -28,10 +28,14 @@
 }
 .detailBtn{
     border: 1px solid black;
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     background-color: gray;
     border-radius: 5px;
     padding: 3px;
     margin: auto;
+}
+.detailBtn:hover{
+    font-size: large;
+    font-weight: bolder;
 }

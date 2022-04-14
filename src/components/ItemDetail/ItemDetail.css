@@ -31,3 +31,13 @@
     font-size: large;
     font-weight: bold;
 }
+.cartLink{
+    margin-top: 50px;
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+.cartLink:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}

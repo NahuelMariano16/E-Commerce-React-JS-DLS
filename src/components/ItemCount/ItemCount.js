@@ -16,7 +16,6 @@ const ItemCount = ({initial, stock, onAdd}) =>{
 
     const decrement = () =>{
         if(count >=2){
-            console.log('Decremento');
             setCount(count -1)
             //Condicional agregado 
         }
@@ -24,7 +23,6 @@ const ItemCount = ({initial, stock, onAdd}) =>{
 
     const increment = () =>{
         if(count < 10){
-            console.log('Incremento');
             setCount(count +1)
         }
 
