@@ -32,12 +32,15 @@
     font-weight: bold;
 }
 .cartLink{
-    margin-top: 50px;
     color: black;
     font-size: large;
     text-decoration: none;
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 3px;
 }
 .cartLink:hover{
+    background-color: gray;
     font-weight: bolder;
     text-decoration: underline;
 }

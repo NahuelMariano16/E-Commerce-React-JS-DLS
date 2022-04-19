@@ -5,7 +5,7 @@ import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 
 
-const ItemDetailContainer =() =>{
+const ItemDetailContainer =(setCart,cart) =>{
     const [product, setProduct] = useState();
     const [loading, setLoading] = useState(true);
     const {productId} = useParams();
@@ -32,7 +32,7 @@ const ItemDetailContainer =() =>{
                 loading?
                     <h2>Cargando producto...</h2> :
                 product?
-                    <ItemDetail {...product} />:
+                    <ItemDetail {...product} setCart={setCart} cart={cart}/>:
                     <h2>El producto no existe</h2>
             }
         </div>

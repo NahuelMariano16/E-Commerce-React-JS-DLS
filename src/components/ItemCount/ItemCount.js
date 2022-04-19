@@ -10,10 +10,6 @@ const ItemCount = ({initial, stock, onAdd}) =>{
         console.log('Se monto el componente')
     }, []);
 
-    useEffect(()=>{
-        console.log('Cambio el contador')
-    }, [count]);
-
     const decrement = () =>{
         if(count >=2){
             setCount(count -1)
@@ -22,7 +18,7 @@ const ItemCount = ({initial, stock, onAdd}) =>{
     };
 
     const increment = () =>{
-        if(count < 10){
+        if(count < stock){
             setCount(count +1)
         }
 

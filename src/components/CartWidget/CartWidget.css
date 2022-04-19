@@ -1,8 +1,9 @@
 .logoCart{
     border-radius: 5px;
-    width: 80px;
+    width: 60px;
     margin-left: 200px;
     background-color: #61DBFB;
+    margin-right: 25px;
 }
 .counter{
     width: 20px;
@@ -13,4 +14,6 @@
 }
 .logoCont{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
