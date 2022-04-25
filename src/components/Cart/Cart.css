@@ -1,0 +1,24 @@
+.CartContainer
+{
+    padding: 20px;
+    padding-bottom: 50px;
+    margin: auto;
+    margin-top: 75px;
+    width: 90%;
+}
+.CartTitle
+{
+    margin-bottom: 30px;
+
+}
+.CartTitleConditional{
+    text-decoration: none;
+    color: black;
+}
+.CartTitleConditional:hover{
+    font-weight: bold;
+}
+.CartTitle0
+{
+    padding: 20px;
+}

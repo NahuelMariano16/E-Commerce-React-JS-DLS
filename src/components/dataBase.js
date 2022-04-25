@@ -2,7 +2,7 @@ const products= [
     {
         id:1 , 
         name:"Samsung Galaxy S22 Ultra", 
-        price: "230.000", 
+        price: 900,
         category:"celular",
         img:"https://img.global.news.samsung.com/ar/wp-content/uploads/2022/02/Samsung_Galaxy-S22-Ultra_Green.jpg",
         stock:15,
@@ -11,7 +11,7 @@ const products= [
     {
         id:2,
         name:"Xiaomi Pad Keyboard",
-        price: "24.000",
+        price: 750,
         category:"tablet",
         img:"https://www.powerplanetonline.com/cdnassets/funda_smart_case_con_teclado_xiaomi_pad_5_negro_01_l.jpg",
         stock:50,
@@ -20,7 +20,7 @@ const products= [
     {
         id:3,
         name:"Notebook HP 240",
-        price:"50.000",
+        price:875,
         category:"notebook",
         img:"https://www.computershopping.com.ar/Images/Productos/Grandes/HP-240-G7_Foto0g.jpg",
         stock:"25",

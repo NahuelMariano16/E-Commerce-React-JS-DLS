@@ -21,6 +21,10 @@ export const CartContextProvider = ({children}) =>{
         return cart.some(prod => prod.id === id)
     }
 
+    const finish = ()=>{
+        let finish = alert("Compra Realizada")
+        console.log("Compra Realizada Correctamente")
+    }
 
     const clearCart = () =>{
         setCart([])
@@ -38,7 +42,8 @@ export const CartContextProvider = ({children}) =>{
             getQuantity,
             isInCart,
             clearCart,
-            removeItem
+            removeItem,
+            finish
         }}>
             {children}
         </CartContext.Provider>
