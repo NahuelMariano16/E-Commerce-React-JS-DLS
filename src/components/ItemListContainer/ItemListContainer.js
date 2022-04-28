@@ -1,10 +1,10 @@
 import {useEffect} from 'react'
 import {useState} from 'react'
-import {getProducts} from '../dataBase'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { firestoreDb } from '../../services/firebase'
+import "./ItemListoContainer.css"
 
 const ItemListContainer = (props) =>{
     const [products, setProducts] = useState([])
@@ -12,15 +12,9 @@ const ItemListContainer = (props) =>{
 
 
     useEffect(()=>{
-        // getProducts(categoryId).then(prods =>{
-        //     setProducts(prods)
-        // }).catch(error =>{
-        //     console.log(error)
-        // })
         const collectionRef =categoryId
             ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
             : collection(firestoreDb, 'products')
-
 
         getDocs(collectionRef).then(response =>{
             const products = response.docs.map(doc =>{
@@ -34,11 +28,14 @@ const ItemListContainer = (props) =>{
         return <h1>No hay productos</h1>
     }
 
-
     return(
        <div>
             <h1>{props.greetings}</h1>
-            <ItemList products={products}/>
+            <ItemList products={products}/> 
+            :
+            <div>
+            <div className='SpinnerCont'> <div className='Spinner'></div></div>
+            </div>
        </div>
     )
 }

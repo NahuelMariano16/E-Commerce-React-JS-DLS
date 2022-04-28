@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import {getProductsById} from '../dataBase'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
@@ -13,18 +12,6 @@ const ItemDetailContainer =(setCart,cart) =>{
     
 
     useEffect(()=>{
-        // getProductsById(productId).then(item =>{
-        //     setProduct(item)
-        // }).catch(err => {
-        //     console.log(err)
-        // }).finally(()=>{
-        //     setLoading(false)
-        // })
-
-        // return(()=>{
-        //     setProduct()
-        // })
-
         getDoc(doc(firestoreDb, 'products', productId)).then(response =>{
             console.log(response)
             const product = {id: response.id , ...response.data()}

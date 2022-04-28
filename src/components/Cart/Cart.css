@@ -22,3 +22,13 @@
 {
     padding: 20px;
 }
+.Spinner{
+    display: grid;
+    place-items: center;
+    border: 8px solid rgba(0, 1, 0, .1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left-color: green;
+    animation: spin 1.2s ease infinite;
+}

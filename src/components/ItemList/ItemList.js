@@ -6,8 +6,6 @@ const ItemList = ({products}) => {
         <div className='listGroup'>
             {products.map(prods => <Item key={prods.id} {...prods}/>)}
         </div>
-    
-      
     )
 }
 

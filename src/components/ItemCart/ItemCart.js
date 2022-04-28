@@ -4,7 +4,7 @@ import './ItemCart.css'
 
 const ItemCart = () => {
 
-    const { cart, removeItem, clearCart, finish } = useContext(CartContext)
+    const { cart, removeItem, clearCart, finish, getTotal } = useContext(CartContext)
 
     return (
         <div className='ItemCart'>
@@ -17,10 +17,9 @@ const ItemCart = () => {
                     <br></br>
                     </li>)}
             </ul>
-            <span></span><hr></hr>
+            <hr></hr>
             <div className='btnContainer'>
-                <button className='Btn' onClick={()=> finish()}>Finalizar compra</button>
-                <button className='Btn' onClick={()=> clearCart()}>Vaciar carrito</button>
+                <h3>Total: $ {getTotal()}</h3>
             </div>
         
         </div>

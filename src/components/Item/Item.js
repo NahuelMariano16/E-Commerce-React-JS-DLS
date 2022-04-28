@@ -14,7 +14,10 @@ const Item = ({id, name, img, price }) =>{
                 <img src={img} alt={name} className="imgProd"/>
                 <p className='prodPrice'>'$'{price}</p>
                 <br></br>
-               <Link to={`/detail/${id}`} className='detailBtn'>Ver Detalles </Link>
+               <Link 
+                to={`/detail/${id}`} 
+                className='detailBtn'>Ver Detalles 
+               </Link>
             </picture>
         </section>
     )
