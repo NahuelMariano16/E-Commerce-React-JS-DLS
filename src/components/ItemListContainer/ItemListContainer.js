@@ -5,13 +5,18 @@ import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { firestoreDb } from '../../services/firebase'
 import "./ItemListoContainer.css"
+import Spinner from '../Spinner/Spinner'
 
 const ItemListContainer = (props) =>{
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
     const {categoryId} = useParams();
 
 
     useEffect(()=>{
+        setLoading(true)
+
+
         const collectionRef =categoryId
             ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
             : collection(firestoreDb, 'products')
@@ -22,20 +27,34 @@ const ItemListContainer = (props) =>{
             })
             setProducts(products)
         })
+        .catch(error =>{
+            console.log(error)
+        }).finally(()=>{
+            setLoading(false)
+        })
     },[categoryId])
 
+
+    if(loading){
+        return (
+            <Spinner />
+        )
+    }
+
+
     if(products.length === 0){
-        return <h1>No hay productos</h1>
+        return (
+            <div>
+                <h1>No hay productos</h1>
+            </div>
+        
+        )
     }
 
     return(
        <div>
-            <h1>{props.greetings}</h1>
+            <h1>Catalogo de productos</h1>
             <ItemList products={products}/> 
-            :
-            <div>
-            <div className='SpinnerCont'> <div className='Spinner'></div></div>
-            </div>
        </div>
     )
 }

@@ -12,14 +12,14 @@ const ItemCount = ({initial, stock, onAdd}) =>{
 
     const decrement = () =>{
         if(count >=2){
-            setCount(count -1)
+            setCount(currCount => currCount + 1 )
             //Condicional agregado 
         }
     };
 
     const increment = () =>{
         if(count < stock){
-            setCount(count +1)
+            setCount(currCount => currCount - 1 )
         }
 
     };
