@@ -66,4 +66,4 @@ Se utilizaron hooks de React como useState y useEffect, useContext y Context Pro
 
 ## Video 
 
-<video src="./images/video.gif" autoplay="true" loop="true" muted="true" controls="false"></video>
+<img src="./images/video.gif"></img>
