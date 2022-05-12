@@ -111,6 +111,9 @@ const Form = () => {
         <div className="modal modal-close">
           <div className="textos">
             <p> Su orden ya fue registrada en la base de datos</p>
+            <p id="orden">
+
+            </p>
             <Link to="/" className="finalizar">
               {" "}
               Gracias por utilizar nuestros servicios

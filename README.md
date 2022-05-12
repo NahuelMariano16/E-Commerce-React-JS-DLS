@@ -62,3 +62,8 @@ Como final del proceso de compra se abrira una ventana modal con una agradecimie
 Para la realizacion de este proyecto se utilizo la version 17 de React.js y una base de datos hecha en Firebase.
 
 Se utilizaron hooks de React como useState y useEffect, useContext y Context Provider para poder utilizar los datos del carrito en todos los hijos que nosotros envolvamos con las etiquetas y herramientas de navegacion como Browser Router, Routes y Link, para que nuestra aplicación siga siendo una SPA y poder navegar en ella. 
+
+
+## Video 
+
+<video src="./images/video.gif" autoplay="true" loop="true" muted="true" controls="false"></video>

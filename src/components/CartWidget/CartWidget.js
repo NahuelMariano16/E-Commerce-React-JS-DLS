@@ -9,7 +9,7 @@ const CartWidget = () => {
     <div className="logoCont">
       <Link to="/cart">
         <img
-          src={"./images/logo.svg"}
+          src={'./images/cart.png'}
           alt="Logo Shopcart"
           className="logoCart"
         />
