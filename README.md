@@ -66,4 +66,4 @@ Se utilizaron hooks de React como useState y useEffect, useContext y Context Pro
 
 ## Video 
 
-<img src="./images/video.gif"></img>
+<img src="https://github.com/NahuelMariano16/E-Commerce-React-JS-DLS/blob/master/public/images/video.gif"></img>
