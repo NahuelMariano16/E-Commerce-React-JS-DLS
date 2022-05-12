@@ -1,4 +1,4 @@
-const getProducts = ()=>{
+export const getProducts = ()=>{
     const collectionRef = categoryId
             ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
             : collection(firestoreDb, 'products')
