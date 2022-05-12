@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import { createContext } from 'react';
 import { CartContextProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart'
+import Form from './components/Form/Form'
 
 export const Context = createContext()
 
@@ -28,7 +29,8 @@ const App=()=> {
               <Route path='detail/:productId' element={<ItemDetailContainer />} />
               <Route path='*' element={<h1>Error 404 NOT FOUND</h1>}/>
               <Route path='/cart' element={<Cart />}/>
-            </Routes>
+              <Route path='/form' element={<Form />}/>
+            </Routes >
           </BrowserRouter>
         </CartContextProvider>
       {/* </Context.Provider> */}
