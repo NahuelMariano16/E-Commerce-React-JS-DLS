@@ -37,7 +37,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
         <footer className="footer">
           {isInCart(id) ? (
             <Link to="/cart" className="cartLink">
-              Generar Orden
+              Ir al Carrito
             </Link>
           ) : (
             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
